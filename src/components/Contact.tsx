@@ -42,20 +42,8 @@ const Contact = () => {
     {
       icon: "📞",
       title: "Call Us",
-      details: "+1 (555) 123-4567",
+      details: "+91 89616 84003",
       description: "Speak with our enrollment advisors",
-    },
-    {
-      icon: "💬",
-      title: "Live Chat",
-      details: "Available 24/7",
-      description: "Chat with us in real-time",
-    },
-    {
-      icon: "📍",
-      title: "Office",
-      details: "San Francisco, CA",
-      description: "Visit our headquarters",
     },
   ];
 
@@ -198,8 +186,8 @@ const Contact = () => {
                 Contact Information
               </h3>
               <p className="text-gray-600 text-sm sm:text-base mb-6 sm:mb-8">
-                Reach out to us through any of these channels. We're here to help
-                you succeed in your DevOps journey.
+                Reach out to us through any of these channels. We're here to
+                help you succeed in your DevOps journey.
               </p>
             </div>
 
@@ -209,37 +197,20 @@ const Contact = () => {
                   key={index}
                   className="bg-white rounded-xl p-4 sm:p-6 shadow-md hover:shadow-lg transition-shadow duration-300"
                 >
-                  <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">{info.icon}</div>
+                  <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">
+                    {info.icon}
+                  </div>
                   <h4 className="font-semibold text-gray-900 mb-1 sm:mb-2 text-sm sm:text-base">
                     {info.title}
                   </h4>
                   <p className="text-blue-600 font-medium mb-1 sm:mb-2 text-sm sm:text-base">
                     {info.details}
                   </p>
-                  <p className="text-gray-600 text-xs sm:text-sm">{info.description}</p>
+                  <p className="text-gray-600 text-xs sm:text-sm">
+                    {info.description}
+                  </p>
                 </div>
               ))}
-            </div>
-
-            {/* Office Hours */}
-            <div className="bg-white rounded-xl p-4 sm:p-6 shadow-md">
-              <h4 className="font-semibold text-gray-900 mb-3 sm:mb-4 text-sm sm:text-base">
-                Office Hours
-              </h4>
-              <div className="space-y-2 text-sm sm:text-base">
-                <div className="flex justify-between">
-                  <span className="text-gray-600">Monday - Friday</span>
-                  <span className="font-medium">9:00 AM - 6:00 PM</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-600">Saturday</span>
-                  <span className="font-medium">10:00 AM - 4:00 PM</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-600">Sunday</span>
-                  <span className="font-medium">Closed</span>
-                </div>
-              </div>
             </div>
           </div>
         </div>

@@ -12,7 +12,7 @@ An interactive website for promoting and managing the **DevOps Job Ready Program
 
 ## 📚 Courses Offered
 
-### 1️⃣ **Basic DevOps Program (₹12,000)**
+### 1️⃣ **Basic DevOps Program (₹12,750)**
 
 **Duration:** 12 Weeks  
 **Goal:** Build strong DevOps fundamentals and hands-on skills.  

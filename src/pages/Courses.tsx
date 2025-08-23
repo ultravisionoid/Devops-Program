@@ -3,26 +3,27 @@ import Curriculum from "../components/Curriculum";
 const Courses = () => {
   const pricingPlans = [
     {
-      name: "Basic Program",
-      description: "Perfect for getting started in DevOps",
-      price: "₹12,000",
+      name: "DevOps Foundation Program",
+      description: "Perfect for building a strong foundation in DevOps",
+      price: "₹12,750",
       originalPrice: "₹15,000",
-      discount: "20% Early Bird Discount",
+      discount: "15% Early Bird Discount",
       duration: "2 Months",
       schedule: "Sat & Sun, 2 hrs/day",
       batchSize: "Small batch (max 20 students)",
       topics: [
-        "Linux & Shell Scripting",
+        "Linux Fundamentals & Shell Scripting",
+        "Git & GitHub for Version Control",
         "Docker & Containerization",
         "CI/CD with Jenkins",
-        "AWS Cloud Basics",
       ],
       popular: false,
       popularLabel: "Best Value",
     },
     {
-      name: "All-Inclusive Program",
-      description: "Complete DevOps mastery with advanced topics",
+      name: "DevOps Mastery Program",
+      description:
+        "Advanced DevOps with Kubernetes, Terraform & Capstone Project",
       price: "₹18,000",
       originalPrice: "₹22,000",
       discount: "18% Early Bird Discount",
@@ -30,10 +31,11 @@ const Courses = () => {
       schedule: "Sat & Sun, 2 hrs/day",
       batchSize: "Small batch (max 20 students)",
       topics: [
-        "Kubernetes in-depth",
+        "Kubernetes Deep Dive",
         "Infrastructure as Code with Terraform",
-        "Workflow Automation with Apache Airflow",
-        "Advanced AWS Services",
+        "Monitoring with Prometheus & Grafana",
+        "Workflow Orchestration with Apache Airflow",
+        "Capstone Project + Mock Interviews",
       ],
       popular: true,
       popularLabel: "Most Popular",
@@ -178,7 +180,7 @@ const Courses = () => {
                 {/* Key Topics */}
                 <div className="text-left mb-6 sm:mb-8">
                   <h4 className="font-semibold text-gray-900 mb-2 sm:mb-3 text-sm sm:text-base">
-                    {plan.name === "All-Inclusive Program"
+                    {plan.name === "DevOps Mastery Program"
                       ? "Everything in Basic +"
                       : "Key Topics:"}
                   </h4>

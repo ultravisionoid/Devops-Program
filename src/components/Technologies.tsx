@@ -1,47 +1,28 @@
+import awsLogo from "../assets/aws.png";
+import dockerLogo from "../assets/docker.png";
+import gitLogo from "../assets/git.png";
+import githubLogo from "../assets/github.png";
+import grafanaLogo from "../assets/grafana.png";
+import helmLogo from "../assets/helm.png";
+import jenkinsLogo from "../assets/jenkins.png";
+import k8sLogo from "../assets/k8s.png";
+import linuxLogo from "../assets/linux.png";
+import prometheusLogo from "../assets/prometheus.png";
+import terraformLogo from "../assets/terraform.png";
+
 const Technologies = () => {
   const technologies = [
-    {
-      name: "AWS",
-      icon: "☁️",
-      bgColor: "bg-orange-50",
-      borderColor: "border-orange-200",
-      textColor: "text-orange-600",
-    },
-    {
-      name: "Docker",
-      icon: "🐳",
-      bgColor: "bg-blue-50",
-      borderColor: "border-blue-200",
-      textColor: "text-blue-600",
-    },
-    {
-      name: "Kubernetes",
-      icon: "⚓",
-      bgColor: "bg-purple-50",
-      borderColor: "border-purple-200",
-      textColor: "text-purple-600",
-    },
-    {
-      name: "Git",
-      icon: "📝",
-      bgColor: "bg-red-50",
-      borderColor: "border-red-200",
-      textColor: "text-red-600",
-    },
-    {
-      name: "Jenkins",
-      icon: "⚙️",
-      bgColor: "bg-green-50",
-      borderColor: "border-green-200",
-      textColor: "text-green-600",
-    },
-    {
-      name: "Monitoring",
-      icon: "📊",
-      bgColor: "bg-yellow-50",
-      borderColor: "border-yellow-200",
-      textColor: "text-yellow-600",
-    },
+    { name: "Linux", icon: linuxLogo },
+    { name: "Git", icon: gitLogo },
+    { name: "GitHub", icon: githubLogo },
+    { name: "AWS", icon: awsLogo },
+    { name: "Docker", icon: dockerLogo },
+    { name: "Kubernetes", icon: k8sLogo },
+    { name: "Helm", icon: helmLogo },
+    { name: "Jenkins", icon: jenkinsLogo },
+    { name: "Terraform", icon: terraformLogo },
+    { name: "Prometheus", icon: prometheusLogo },
+    { name: "Grafana", icon: grafanaLogo },
   ];
 
   return (
@@ -65,10 +46,16 @@ const Technologies = () => {
           {technologies.map((tech, index) => (
             <div
               key={index}
-              className={`${tech.bgColor} ${tech.borderColor} border-2 rounded-xl p-4 sm:p-6 text-center hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1`}
+              className="bg-white border border-gray-200 rounded-xl p-4 sm:p-6 text-center hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
             >
-              <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">{tech.icon}</div>
-              <h3 className={`font-semibold ${tech.textColor} text-sm sm:text-base`}>{tech.name}</h3>
+              <img
+                src={tech.icon}
+                alt={tech.name}
+                className="h-12 sm:h-16 mx-auto mb-3 sm:mb-4 object-contain"
+              />
+              <h3 className="font-semibold text-gray-700 text-sm sm:text-base">
+                {tech.name}
+              </h3>
             </div>
           ))}
         </div>
