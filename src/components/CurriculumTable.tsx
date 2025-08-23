@@ -1,4 +1,120 @@
 const CurriculumTable = () => {
+  // const curriculum = [
+  //   {
+  //     week: "Week 1",
+  //     module: "Linux & Git Basics",
+  //     topics: [
+  //       "Linux Fundamentals",
+  //       "Shell Scripting",
+  //       "Git & GitHub",
+  //       "Basic Networking",
+  //     ],
+  //     duration: "8 hours",
+  //     projects: "Lab: Git branching workflow",
+  //   },
+  //   {
+  //     week: "Week 2",
+  //     module: "AWS Core Services",
+  //     topics: ["AWS Overview", "EC2, S3, IAM", "VPC Basics", "AWS CLI"],
+  //     duration: "8 hours",
+  //     projects: "Mini Project: Host a web app on AWS",
+  //   },
+  //   {
+  //     week: "Week 3",
+  //     module: "Docker & Containerization",
+  //     topics: [
+  //       "Docker Basics",
+  //       "Images & Containers",
+  //       "Docker Compose",
+  //       "Best Practices",
+  //     ],
+  //     duration: "8 hours",
+  //     projects: "Lab: Build and run a custom Docker image",
+  //   },
+  //   {
+  //     week: "Week 4",
+  //     module: "Kubernetes Introduction",
+  //     topics: [
+  //       "K8s Architecture",
+  //       "Pods & Services",
+  //       "Deployments",
+  //       "Basic Ingress",
+  //     ],
+  //     duration: "8 hours",
+  //     projects: "Mini Project: Deploy a containerized app on K8s",
+  //   },
+  //   {
+  //     week: "Week 5",
+  //     module: "CI/CD with Jenkins",
+  //     topics: [
+  //       "Jenkins Basics",
+  //       "Pipelines",
+  //       "GitHub Actions (Intro)",
+  //       "CI/CD Best Practices",
+  //     ],
+  //     duration: "8 hours",
+  //     projects: "Lab: Create a CI/CD pipeline in Jenkins",
+  //   },
+  //   {
+  //     week: "Week 6-8",
+  //     module: "Integrated Foundation Project",
+  //     topics: ["Combine AWS", "Docker", "K8s", "Jenkins"],
+  //     duration: "24 hours",
+  //     projects: "Foundation Project: End-to-end CI/CD pipeline deployment",
+  //   },
+  //   {
+  //     week: "Week 9",
+  //     module: "Infrastructure as Code",
+  //     topics: [
+  //       "Terraform Basics",
+  //       "Provisioning AWS Infra",
+  //       "State Management",
+  //       "Best Practices",
+  //     ],
+  //     duration: "8 hours",
+  //     projects: "Lab: Provision AWS EC2 & S3 using Terraform",
+  //   },
+  //   {
+  //     week: "Week 10",
+  //     module: "Advanced Kubernetes",
+  //     topics: [
+  //       "Helm Charts",
+  //       "Ingress & Load Balancing",
+  //       "Auto Scaling",
+  //       "Namespaces & RBAC",
+  //     ],
+  //     duration: "8 hours",
+  //     projects: "Mini Project: Helm-based deployment with autoscaling",
+  //   },
+  //   {
+  //     week: "Week 11",
+  //     module: "Monitoring, Security & DevSecOps",
+  //     topics: [
+  //       "Prometheus & Grafana",
+  //       "ELK Stack",
+  //       "Security Scanning",
+  //       "DevSecOps Compliance",
+  //     ],
+  //     duration: "8 hours",
+  //     projects: "Lab: Setup monitoring dashboard with alerts",
+  //   },
+  //   {
+  //     week: "Week 12",
+  //     module: "Capstone Project",
+  //     topics: [
+  //       "Design & deploy a production-grade CI/CD pipeline with AWS, Docker, K8s, Terraform, Jenkins",
+  //     ],
+  //     duration: "8 hours",
+  //     projects: "Capstone Project ",
+  //   },
+  //   {
+  //     week: "Week 13",
+  //     module: "Career Preparation",
+  //     topics: ["Resume Building", "Mock Interviews", "Job Assistance"],
+  //     duration: "4 hours",
+  //     projects: "Job readiness",
+  //   },
+  // ];
   const curriculum = [
     {
       week: "Week 1",
@@ -56,14 +172,14 @@ const CurriculumTable = () => {
       projects: "Lab: Create a CI/CD pipeline in Jenkins",
     },
     {
-      week: "Week 6-8",
+      week: "Week 6-7",
       module: "Integrated Foundation Project",
       topics: ["Combine AWS", "Docker", "K8s", "Jenkins"],
-      duration: "24 hours",
+      duration: "16 hours",
       projects: "Foundation Project: End-to-end CI/CD pipeline deployment",
     },
     {
-      week: "Week 9",
+      week: "Week 8",
       module: "Infrastructure as Code",
       topics: [
         "Terraform Basics",
@@ -75,7 +191,7 @@ const CurriculumTable = () => {
       projects: "Lab: Provision AWS EC2 & S3 using Terraform",
     },
     {
-      week: "Week 10",
+      week: "Week 9",
       module: "Advanced Kubernetes",
       topics: [
         "Helm Charts",
@@ -87,7 +203,7 @@ const CurriculumTable = () => {
       projects: "Mini Project: Helm-based deployment with autoscaling",
     },
     {
-      week: "Week 11",
+      week: "Week 10",
       module: "Monitoring, Security & DevSecOps",
       topics: [
         "Prometheus & Grafana",
@@ -99,16 +215,16 @@ const CurriculumTable = () => {
       projects: "Lab: Setup monitoring dashboard with alerts",
     },
     {
-      week: "Week 12",
+      week: "Week 11",
       module: "Capstone Project",
       topics: [
         "Design & deploy a production-grade CI/CD pipeline with AWS, Docker, K8s, Terraform, Jenkins",
       ],
       duration: "8 hours",
-      projects: "Capstone Project ",
+      projects: "Capstone Project",
     },
     {
-      week: "Week 13",
+      week: "Week 12",
       module: "Career Preparation",
       topics: ["Resume Building", "Mock Interviews", "Job Assistance"],
       duration: "4 hours",

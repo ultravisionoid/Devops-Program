@@ -35,7 +35,7 @@ const Testimonials = () => {
               Industry Expert Instructors
             </h3>
             <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
-              Learn from DevOps professionals with 8+ years of experience at top
+              Learn from DevOps professionals with 5+ years of experience at top
               tech companies. Our instructors have helped hundreds transition
               into DevOps careers.
             </p>

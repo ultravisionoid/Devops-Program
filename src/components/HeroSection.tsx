@@ -98,8 +98,8 @@ const HeroSection = () => {
             <p className="text-gray-700 text-base sm:text-lg mb-2">
               Average starting salary for DevOps engineers
             </p>
-            <p className="text-2xl sm:text-3xl font-bold text-green-500">
-              ₹6-9 LPA
+            <p className="text-2xl sm:text-3xl font-bold text-green-500 ">
+              ₹6-10 LPA
             </p>
           </div>
         </div>

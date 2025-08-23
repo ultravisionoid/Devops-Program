@@ -1,15 +1,15 @@
 const About = () => {
   const stats = [
-    { number: "12+", label: "Weeks Program" },
-    { number: "50+", label: "Hands-on Projects" },
-    { number: "24/7", label: "Support Available" },
-    { number: "100%", label: "Online Learning" },
+    { number: "12+", label: "Weeks of Guided Learning" },
+    { number: "10+", label: "Industry-Grade Projects" },
+    { number: "100%", label: "Rewatchable Recordings" },
+    { number: "1:1", label: "Personal Mentorship" },
   ];
 
   const team = [
     {
       name: "Aayush Jhunjhunwala",
-      role: "Lead Instructor & DevOps Expert",
+      role: "Senior DevOps Engineer, Oracle",
       bio: "DevOps professional with 5+ years of experience in cloud infrastructure, automation, and CI/CD pipelines.",
       image:
         "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=200&h=200&fit=crop&crop=face",
