@@ -82,7 +82,7 @@ devops-job-ready/
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/yourusername/devops-job-ready.git
+git clone https://github.com/ultravisionoid/Devops-Program.git
 cd devops-job-ready
 
 # 2. Install dependencies
@@ -98,11 +98,9 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ## 🌍 Deployment
 
-You can deploy easily on:
+It is deployed on:
 
-- [Vercel](https://vercel.com/) (recommended)
-- [Netlify](https://www.netlify.com/)
-- [GitHub Pages](https://pages.github.com/)
+- [DJR](https://devopsjobready.netlify.app/)
 
 ---
 
