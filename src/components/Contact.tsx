@@ -36,7 +36,7 @@ const Contact = () => {
     {
       icon: "📧",
       title: "Email Us",
-      details: "hello@devopsready.com",
+      details: "aayushjhun@gmail.com",
       description: "Get in touch with our support team",
     },
     {
