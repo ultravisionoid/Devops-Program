@@ -1,20 +1,20 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Courses', href: '#courses' },
-    { name: 'Contact', href: '#contact' },
+    { name: "Home", href: "#home" },
+    { name: "About", href: "#about" },
+    { name: "Courses", href: "#courses" },
+    { name: "Contact", href: "#contact" },
   ];
 
   const handleEnrollNow = () => {
     // Scroll to courses section
-    const coursesSection = document.getElementById('courses');
-    if (coursesSection) {
-      coursesSection.scrollIntoView({ behavior: 'smooth' });
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
     }
     setIsMenuOpen(false); // Close mobile menu if open
   };
@@ -52,7 +52,7 @@ const Navbar = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <button 
+            <button
               onClick={handleEnrollNow}
               className="bg-gradient-to-r from-indigo-500 via-purple-500 to-blue-500 text-white px-6 py-2 rounded-2xl font-medium hover:shadow-lg transition-all duration-200 transform hover:scale-105"
             >
@@ -66,11 +66,26 @@ const Navbar = () => {
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-gray-700 hover:text-indigo-600 focus:outline-none focus:text-indigo-600"
             >
-              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
                 {isMenuOpen ? (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
                 ) : (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
                 )}
               </svg>
             </button>
@@ -91,7 +106,7 @@ const Navbar = () => {
                   {item.name}
                 </a>
               ))}
-              <button 
+              <button
                 onClick={handleEnrollNow}
                 className="w-full mt-4 bg-gradient-to-r from-indigo-500 via-purple-500 to-blue-500 text-white px-6 py-2 rounded-2xl font-medium"
               >

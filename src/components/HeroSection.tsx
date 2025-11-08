@@ -1,15 +1,20 @@
 const HeroSection = () => {
   const handleEnrollNow = () => {
     // Scroll to courses section
-    const coursesSection = document.getElementById("courses");
-    if (coursesSection) {
-      coursesSection.scrollIntoView({ behavior: "smooth" });
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   const handleDownloadBrochure = () => {
-    // Handle brochure download
-    alert("Brochure download will be available soon!");
+    // Download brochure from assets folder
+    const link = document.createElement("a");
+    link.href = "src/assets/Devops Course Brochure.pdf"; // Corrected file name
+    link.download = "Devops Course Brochure.pdf"; // Corrected file name
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (

@@ -1,9 +1,9 @@
 const Testimonials = () => {
   const handleEnrollNow = () => {
     // Scroll to courses section
-    const coursesSection = document.getElementById("courses");
-    if (coursesSection) {
-      coursesSection.scrollIntoView({ behavior: "smooth" });
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
     }
   };
 
