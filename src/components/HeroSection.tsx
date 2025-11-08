@@ -1,3 +1,4 @@
+import brochurePDF from "../assets/Devops Course Brochure.pdf";
 const HeroSection = () => {
   const handleEnrollNow = () => {
     // Scroll to courses section
@@ -10,7 +11,7 @@ const HeroSection = () => {
   const handleDownloadBrochure = () => {
     // Download brochure from assets folder
     const link = document.createElement("a");
-    link.href = "src/assets/Devops Course Brochure.pdf"; // Corrected file name
+    link.href = brochurePDF;
     link.download = "Devops Course Brochure.pdf"; // Corrected file name
     document.body.appendChild(link);
     link.click();
